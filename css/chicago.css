@@ -1,0 +1,167 @@
+body {
+	min-height: 2000px;
+	padding-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*navbar styles*/
+#navbar {
+	text-align: center;
+	width: 472px;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#navbar a:hover {
+	border-style: solid;
+	border-bottom-width: 1.5px;
+	border-bottom-color: #F00;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.navbar-nav li a {
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+
+.navbar-inverse {
+	background-color: #080808;
+	opacity: 0.85;
+	filter: alpha(opacity=50);
+	border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+	color: #F00;
+}
+
+/*marquee redline*/
+.redline {
+	color:#F00;
+	width:100px;
+	height:3px; 
+	background-color:#F00;
+}
+
+
+/*marquee caption*/
+.carousel-caption {
+	text-align: left;
+	top: 210px;
+}
+
+/*side navigation*/
+.carousel-indicators {
+	position: absolute;
+	z-index: 15;
+	list-style: none;
+	right: 0px;
+	left: auto;
+	top: 200px;
+}
+
+ul.carousel-indicators {
+	width: auto;
+	overflow: hidden;
+	margin-left: 0px;
+	text-align: right;
+	padding-right: 30px;
+}
+
+/*how list look overall*/
+.carousel-indicators li {
+	display: block;
+	border: none;
+	color: #ffffff;
+}
+
+/*how list look on active*/
+.carousel-indicators > li, .carousel-indicators > li.active {
+	width: 250px;
+	height: 25px;
+	border-radius: 0;
+	border: none;
+	background:none;
+	text-indent: 0;
+}
+/*how links look on active*/
+.carousel-indicators > li.active {
+    background: transparent;
+}
+
+/*how links look overall*/
+#myCarousel .carousel-indicators a {
+	color: #ffffff;
+	text-decoration:none;
+}
+
+/*how links look on hover*/
+#myCarousel .carousel-indicators a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	padding-right: 20px;
+	opacity: 1;
+}
+
+
+/*bar that appears on hover*/
+#myCarousel .carousel-indicators a:hover > .bar {
+	opacity: 1.0;
+	content: "";
+	color: #F00;
+	width: 10px;
+	height: 2px;
+}
+
+/*making bar appear transition*/
+.bar {
+	opacity: 0.0;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+/*arrow overlay*/
+.overlay {
+	position: absolute;
+	top: 700px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	pointer-events: auto;
+}
+
+/*carousel fade transition*/
+.carousel-fade .carousel-inner .item {
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
